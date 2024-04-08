@@ -1,7 +1,40 @@
+/* CABEÇALHO */
 .cabecalho__container{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     position: fixed;
     top: 0;
+}
+
+/* SUPERIOR SEÇÃO */
+.superior__secao__container{
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    overflow: scroll;
+    gap: 15px;
+}
+
+/* RODAPÉ */
+.calho__pesquisar__icabetem{
+    display: none;
+}
+
+.rodape__container{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+@media(min-width: 834px){
+
+    /* CABEÇALHO */
+    .calho__pesquisar__icabetem{
+        display: block;
+    }
+
+    /* RODAPE */
+    .rodape__container{
+        justify-content: space-between;
+    }
 }

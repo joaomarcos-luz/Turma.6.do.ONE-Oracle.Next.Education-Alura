@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    html body{
+        font-size: 62.5;
+    }
+
+    h1{
+        font-size: 2.5em; /*25px*/
+    }
+
+    p{
+        font-size: 1.6em; /*16px*/
+    }
+
+   .em{
+        /* O elemento pai que é o paragrafo vale 1.6em.
+        O strong e mark que tem o valor de 1em.
+        Devido o valor do pai ser 1.6em o valores dos filhos strong e mark pegara como referencia o valor do pai e 1em também valera 1.6em. */
+
+    font-size: 1em;
+    
+    /* EM:
+        Referência: Tamanho da fonte do elemento pai.
+        Escalabilidade: Escalável em cascata.
+        Uso: Ajustar elementos dentro de um contexto específico.         */
+   }
+
+
+   .rem{
+        /* O valor rem é mais facil de entender
+        O rem pegara o valor do html/body/ *
+        O html tem o valor de 62.5 que significa que 1rem tem 10px
+        Então na classe rem usando 1em significa que tera 10px 
+        assim strong e mark ficara menor pós o paragrafo tem 1.6em que é 16px. */
+
+    font-size: 1rem;
+
+    /* REM:
+        Referência: Tamanho da fonte do elemento raiz (html).
+        Escalabilidade: Tamanho constante em todo o documento.
+        Uso: Promover acessibilidade e responsividade.
+    */
+   }
+   </style>
+</head>
+<body>
+    <h1>Pratica de Medida Em e Rem em CSS.</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur <strong class="em">adipisicing</strong> elit. Id, sed temporibus magni, repellendus nostrum libero commodi adipisci at numquam non nulla beatae deserunt quia necessitatibus ipsum illum <mark class="em">exercitationem</mark>, cupiditate natus!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur <strong class="rem">adipisicing</strong> elit. Illo recusandae iusto minus perspiciatis officiis. Debitis facilis, consequuntur itaque quas inventore, ad quos autem repudiandae <mark class="rem">voluptatibus</mark> atque sit maiores asperiores ratione?</p>
+</body>
+</html>

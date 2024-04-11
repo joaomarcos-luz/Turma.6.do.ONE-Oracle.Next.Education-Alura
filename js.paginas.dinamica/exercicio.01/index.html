@@ -16,13 +16,23 @@
         body{
             display: flex;
             justify-content: center;
-            flex-direction: column;
             align-items: center;
-            gap: 20px;
+        }
+
+        section{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            padding: 100px;
+            max-width: 700px;
+            margin: auto;
+            gap: 2em;
+            margin: auto;
         }
 
         h1{
             font-size: 2rem;
+            text-align: center;
         }
         
         button{
@@ -33,17 +43,19 @@
         background-color: rgb(198, 45, 45);
         border-radius: 5px;
         color: #000;
-        /* Adicione mais estilos conforme necessário */
+    }
+
+    .meuPlayer:hover{
+        background-color: blue;
     }
     </style>
 </head>
 <body>
-    <h1>Exercicio Js Dinamico</h1>
-
-    <button class="button">Clique aqui</button>
-
-    <audio controls src="./audio/keya.wav" class="meuPlayer">tic</audio>
-
-    <script src="main.js"></script>
+    <section>
+        <h1>Exercicio Js Dinamico</h1>
+        <button class="button">Clique aqui</button>
+        <audio controls src="./audio/keya.wav" class="meuPlayer">tic</audio>
+        <script src="main.js"></script>
+    </section>
 </body>
 </html>

@@ -1,5 +1,5 @@
-const button = document.querySelector(".button")
+const tocaSom = () => document.querySelector(".player").play()
 
-button.addEventListener("click", (event) => {
-    alert("Fui clicado")
-})
+const listaBotao = document.querySelectorAll(".button")
+
+listaBotao[0].onclick = tocaSom

@@ -43,14 +43,6 @@ h1 {
     width: 80px;
   }
 
-  .delete {
-    background-color: #ff0000;
-    color: #fff;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-  }
-
   input[type=tel] {
     background-color: #cccccc;
     border-radius: 10px;

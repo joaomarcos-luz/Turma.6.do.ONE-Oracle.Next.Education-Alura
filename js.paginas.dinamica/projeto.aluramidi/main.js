@@ -13,5 +13,5 @@ for (let contador = 0; contador < listaDeTeclas.length; contador++) {
     tecla.onkeydown = () => tecla.classList.add("ativa")
 
     tecla.onkeyup = () => tecla.classList.remove("ativa")
-
+    
 }

@@ -8,19 +8,12 @@ for (const teclas of listaDeTeclas) {
     })
 }
 
+for (const teclas of listaDeTeclas) {
+    teclas.onkeydown = (evento) => {
+        if(evento.code === "Enter" || evento.code === "Space"){
+            teclas.classList.add("ativa")
+        }
+    }
 
-// for (const teclas of listaDeTeclas) {
-    
-//     const tecla = teclas //fosse for normal seria teclas[index]
-
-//     tecla.addEventListener("click", () => {
-//         inpuTel.value += tecla.value
-//     })
-// }
-
-
-// const inputTel = document.querySelector("input[type=tel]")
-// const delet = () => document.querySelector("input[type=tel]")
-
-// document.querySelector(".delete").onclick = delet
-
+    teclas.onkeyup = () => teclas.classList.remove("ativa")
+}

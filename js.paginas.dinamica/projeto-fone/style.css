@@ -35,6 +35,15 @@ h1 {
     padding: 10px;
   }
 
+  .tecla.ativa,
+.tecla:active {
+  background-color: red;
+  border: 4px solid  red;
+  box-shadow: 3px 3px 0 rgb(202, 16, 16) inset;
+  color: var(--branca);
+  outline: none;
+}
+
   input[type=button] {
     border-radius: 20px;
     cursor: pointer;

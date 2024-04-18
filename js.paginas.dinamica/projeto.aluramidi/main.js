@@ -1,10 +1,13 @@
 const tocarSom = (seletorAudio) => {
+
     const elemento = document.querySelector(seletorAudio)
-    if (elemento === null) {
-        console.log("Elemento não encontrado.")
-    } else {
+
+    if(elemento && elemento.localName === "audio"){
         elemento.play()
+    } else {
+        console.log("Elemento não encontrado.")
     }
+
 }
 
 const listaDeTeclas = document.querySelectorAll(".tecla")

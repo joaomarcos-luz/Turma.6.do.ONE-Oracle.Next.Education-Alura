@@ -91,6 +91,7 @@ startPauseBt.addEventListener('click', iniciarOuPausar)
 
 function iniciarOuPausar() {
     if(intervaloId){
+        musicaPlayContagem.pause()
         musicaPauseContagem.play()
         zera()
         return
@@ -101,6 +102,7 @@ function iniciarOuPausar() {
 
 function zera() {
     clearInterval(intervaloId)
+    musicaPlayContagem.pause()
     musicaFimContagem.play()
     intervaloId = null
 }

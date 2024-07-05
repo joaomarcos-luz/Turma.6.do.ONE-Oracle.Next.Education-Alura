@@ -4,4 +4,4 @@ function aplicarDesconto(livros) {
         return {...livro, preco: livro.preco - (livro.preco * desconto)};
     });
     return livrosComDesconto;
-}
+}5
